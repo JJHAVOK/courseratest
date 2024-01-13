@@ -79,40 +79,128 @@ a{
   box-shadow:0 8px, 0 16px
 }
 .logo{
-  border:2px solid #fff;
-  border-radius:3px;
+  border:1px solid #fff;
+  border-radius:10px;
   text-decoration:none;
   display:inline-flex;
   align-items:center;
   align-content:center;
   margin:20px;
-  padding:0px 10px;
+  padding:4px 4px 2px 2px;
   font-weight:900;
   font-size:1.1em;
   line-height:1;
   box-sizing:border-box;
-  height:40px
+  height:65px
+}
+.logo:hover{
+  border:1px solid #fff;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  margin:20px;
+  padding:6px 6px 4px 4px;
+  font-weight:900;
+  font-size:1.1em;
+  line-height:1;
+  background-color:#000000;
+  box-sizing:border-box;
+  height:65px
 }
 .extra, .exmore{
   flex: 0 0 auto;
-  width:50%
+  width:100%
+}
+.extra2{
+  display:inline-flex;
+  margin:10px;
+}
+.color {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #0404048a;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.color:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.color:active {
+    color: #000
+}
+
+.color:active:after {
+    background: transparent;
+}
+
+.color:hover:before {
+    opacity: 1;
+}
+
+.color:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0404048a;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 .exmore{
   width:100%;
-  padding:10% 10% 0 10%;
+  padding:2% 10% 0 10%;
   text-align:center;
   text-shadow:0 2px 3px rgba(0,0,0,0.2)
 }
-.maker{
-  display:inline-block;
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  background:url(https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center no-repeat;
-  background-size:cover;
-  box-shadow:0 2px 3px rgba(0,0,0,0.3);
-  margin-bottom:3px
+.bytext{
+  display:block;
+  width:100%;
+  margin: 15px;
+  text-align:center;
+  font-size: 12px;
+  font-weight: 1200;
 }
+.maker{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(../uploads/images/maker.png) center no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 3px rgb(16 39 217 / 90%);
+    margin-bottom: 3px;
+    background-color: #0000005c;
+  }
 .exmore h4, .info{
   font-size:0.7em
 }
@@ -136,18 +224,30 @@ a{
   padding:5px 10px;
   font-weight:600
 }
-
-.twtr{
-  margin-top:100px
-}.btn.twtr:after{content:"\1F426";padding-left:5px}
+.fa {
+  padding: 25px;
+  font-size: 17px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 
 .site {
-  padding: 20em 0;
+  padding: 15px 0;
   text-align: center;
-  background-color: #efefef;
+  background: #222;
   font-size: .8em;
   color: #444;
-  position:relative
+  position:relative;
+  height: 45px;
 }
 .site a {
   color: #666;
@@ -165,7 +265,7 @@ a{
   width:100%
 }
 .site nav a{
-  padding:10px 30px;
+  padding:30px 30px;
   font-size:1.3em;
   display:inline-block
 }
