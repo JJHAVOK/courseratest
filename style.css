@@ -1,0 +1,8 @@
+div #mainnav li {
+display:inline-block;
+width:200px;
+Border:grey;
+text-color:blue;
+list-style: none;
+
+}
