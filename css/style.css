@@ -11,6 +11,52 @@ body{
 a{
   text-decoration:none
 }
+@media screen and (min-width: 201px) and (max-width: 600px) {
+  .header: {
+    height:100px;
+  }
+  .header:before{
+  content:"";
+  width:650px;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(../uploads/images/hbg.png) 100% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 230s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+   .exmore h4, .info {
+    font-size: 0.5em;
+}
+   .exmore h1, .info {
+    font-size: 0.8em;
+}
+   .maker {
+    display: inline-block;
+    opacity: 1;
+    animation: flickerAnimation 5s infinite;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(../uploads/images/maker.png) center no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 3px rgb(16 39 217 / 90%);
+    margin-bottom: 3px;
+    background-color: #0000005c;
+}
+   .color{
+    height: 8vw;
+    width: 60vw;
+   }
+}
 .header{
   position:relative;
   overflow:hidden;
@@ -20,9 +66,7 @@ a{
   align-items: flex-start;
   align-content: flex-start;
   height:50vw;
-  min-height:300px;
   max-height:510px;
-  min-width:300px;
   color:#eee;
   box-sizing: content-box;
 }
