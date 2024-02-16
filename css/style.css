@@ -24,6 +24,7 @@ a{
   max-height:510px;
   min-width:300px;
   color:#eee;
+  box-sizing: content-box;
 }
 .header:after{
   content:"";
@@ -34,6 +35,9 @@ a{
   left:0;
   z-index:-1;
  background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+.extra2-container{
+  height:20vw;
 }
 .header:before{
   content:"";
@@ -58,8 +62,8 @@ a{
 }
 .menu{
   display:block;
-  width:40px;
-  height:30px;
+  width:10%;
+  height:9%;
   border-radius:3px;
   position:absolute;
   right:20px;
@@ -182,10 +186,11 @@ a{
     100% { background-position: 0 0; }
 }
 .exmore{
-  width:100%;
-  padding:2% 10% 0 10%;
-  text-align:center;
-  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+    width: 100vw;
+    height:13vw;
+    padding: 2% 0% 0 0%;
+    text-align: center;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 .bytext{
   display:block;
