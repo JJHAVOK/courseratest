@@ -311,7 +311,8 @@ a{
   top:0;
   left:0;
   background: #1c1c1c7a;
-  width:100%
+  width:100%;
+  margin-top: 90px;
 }
 .site nav a{
   padding:30px 30px;
