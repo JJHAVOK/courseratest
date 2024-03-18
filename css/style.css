@@ -100,7 +100,7 @@ padding: 5px;
 
 
 @media (min-wdith:768px) and (max-width: 991px){
-  .block-3{
+  .block-1{
   width:32.33%;
   border: #333 4px;
   height:150px;
@@ -113,7 +113,7 @@ padding: 5px;
 }
 
 @media (max-width: 767px){
-  .block-3{
+  .block-1{
   width:32.33%;
   border: #333 4px;
   height:150px;
