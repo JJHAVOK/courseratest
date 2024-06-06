@@ -75,10 +75,10 @@ margin: 0px 5px 5px 5px;
 }
 .title-1{
 float:right;
-color: #db919c;
+color: #fff;
 font-size: 14px;
 position: relative;
-background: #1545f5;
+background: #db919c;
 padding: 5px;
 margin-left:5px;
 }
@@ -93,10 +93,10 @@ margin-left:5px;
 }
 .title-3{
 float:right;
-color: #a5a00a;
+color: #fff;
 font-size: 14px;
 position: relative;
-background: #0c7e0a;
+background: #a5a00a;
 padding: 5px;
 margin-left:5px;
 }
