@@ -43,27 +43,30 @@ padding: 50px 20px 0px 20px;
 text-align:center;
 position:relative;
 }
-.block-1{
+.b1{
 width:32.33%;
-border: #333 4px;
+margin: 0px 5px 5px 5px;
+    border: 4mm ridge rgb(50 164 220 / 60%);
 height:150px;
 background: #000;
 color: #fff;
 box-sizing: border-box;
 display:inline-block;
 }
-.block-2{
+.b2{
 width:32.33%;
-border: #333 4px;
+margin: 0px 5px 5px 5px;
+    border: 4mm ridge rgb(50 164 220 / 60%);
 height:150px;
 background: #000;
 color: #fff;
 box-sizing: border-box;
 display:inline-block;
 }
-.block-3{
+.b3{
 width:32.33%;
-border: #333 4px;
+margin: 0px 5px 5px 5px;
+    border: 4mm ridge rgb(50 164 220 / 60%);
 height:150px;
 background: #000;
 color: #fff;
@@ -77,6 +80,7 @@ font-size: 14px;
 position: relative;
 background: #1545f5;
 padding: 5px;
+margin-left:5px;
 }
 .title-2{
 float:right;
@@ -85,6 +89,7 @@ font-size: 14px;
 position: relative;
 background: #bd0f37;
 padding: 5px;
+margin-left:5px;
 }
 .title-3{
 float:right;
@@ -93,35 +98,64 @@ font-size: 14px;
 position: relative;
 background: #0c7e0a;
 padding: 5px;
+margin-left:5px;
 }
 .block p{
   padding: 25px 20px 25px 20px;
 }
 
 
-@media (min-wdith:768px) and (max-width: 991px){
-  .block-1{
-  width:32.33%;
-  border: #333 4px;
-  height:150px;
-  background: #000;
-  color: #fff;
-  box-sizing: border-box;
-  margin:auto;
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .b1 {
+    width:32.33%;
+    float:left;
   }
-
+  .b2 {
+    width:32.33%;
+    float:left;
+  }
+  .b3 {
+    width:32.33%;
+    float:left;
+  }
 }
 
-@media (max-width: 767px){
-  .block-1{
-  width:32.33%;
-  border: #333 4px;
-  height:150px;
-  background: #000;
-  color: #fff;
-  box-sizing: border-box;
-  display:block;
-  margin:auto;
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .b1 {
+    width: 48.5%;
+    float:left;
   }
+  .b2 {
+    width: 48.5%;
+    float:left;
+  }
+  .b3 {
+    width:100%;
+    float:left;
+  }
+  body {
+    background-color: blue;
+  }
+}
 
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .b1 {
+    width: 100%;
+    float:left;
+  }
+  .b2 {
+    width: 100%;
+    float:left;
+  }
+  .b3 {
+    width: 100%;
+    float:left;
+  }
+  body {
+    background-color: green;
+  }
 }
