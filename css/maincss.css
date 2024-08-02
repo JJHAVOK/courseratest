@@ -424,4 +424,7 @@ h3.menu-item-title {
     float: left;
     width: 100%;
   }
+  .menu-item-photo {
+    margin:auto !important;
+  }
 }
